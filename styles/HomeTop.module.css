@@ -1,0 +1,44 @@
+.picDiv {
+    height: 700px;
+    background-image: url("/images/top-img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* margin-top: -50px; */
+    text-align: center;
+    position: relative;
+    margin-bottom: -1px;
+}
+
+.rainbowHover{
+    color: #777;
+    animation: moveTitle 0.5s ease-in;
+
+}
+.rainbowHover:hover{
+        background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);   -webkit-background-clip: text;
+        color: transparent;
+}
+.homeTitle {
+    padding-top: 290px;
+    
+    padding-left: 40%;
+}
+
+@keyframes moveTitle {
+    from {
+      transform: translateY(6px);
+      opacity: 0;
+    
+    }
+    to {
+      transform:translate(0px);
+      opacity: 1;
+    }
+  }
+@media (max-width: 1300px) {
+    .homeTitle {
+        padding-top: 320px;
+        
+    }
+}

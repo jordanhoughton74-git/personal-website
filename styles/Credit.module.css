@@ -1,0 +1,32 @@
+.credit {
+    background-color: #4332CF;
+    margin-top: -22px;
+    height: 100vh;
+    text-align: center;
+    display: block;
+}
+.topPad {
+    padding-top: 20vh;
+}
+.top {
+    padding-top: 50px;
+}
+.footer {
+    height: 100px;
+    background-color: #383838;
+    color: white;
+    text-align: center;
+    margin-top: -50px;
+}
+.link {
+    text-decoration: none;
+    padding-top: 40px;
+}
+.anchor {
+    color: white;
+    text-align: center !important;
+}
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}

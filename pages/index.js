@@ -1,65 +1,102 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Head from 'next/head';
+import React, {useEffect} from "react";
+import HomeTop from "../components/homeTop";
+import Header from "../components/header"
+import About from '../components/about';
+import Employment from '../components/employment';
+import Education from '../components/education'
+import Footer from '../components/footer'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import $ from 'jquery'; 
+
+
 
 export default function Home() {
+  if (process.browser) {
+
+  $(window).scroll(function() {
+  
+    var $window = $(window),
+        $wrapper = $('.wrapper'),
+        $panel = $('.panel');
+    
+    var scroll = $window.scrollTop() + ($window.height() / 3);
+   
+    $panel.each(function () {
+      var $this = $(this);
+      
+      
+      if ($this.position().top <= scroll && $this.position().top + $this.height() > scroll) {
+            
+        $wrapper.removeClass(function (index, css) {
+          return (css.match (/(^|\s)color-\S+/g) || []).join(' ');
+        });
+         
+        $wrapper.addClass('color-' + $(this).data('color'));
+      }
+    });    
+    
+  }).scroll();
+}
+
+
+
+
+
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <>
+    <Head>
+      <title>Jordan Houghton | Personal Website</title>
+      <meta name="title" content="Jordan Houghton | Personal Website"/>
+      <meta name="description" content="My name is Jordan Houghton and this my personal website, I hope you enjoy it. Website created by myself for Houghton Web Design."/>
+      <meta name="keywords" content="Personal Website, Houghton Web Design, Web CV, Online CV"/>
+      <meta name="robots" content="index, follow"/>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+      <meta name="language" content="en"/>
+      <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png"/>
+      <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png"/>
+      <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png"/>
+    </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+    <div className="wrapper">
+    <Header />
+    <HomeTop />
+  
+    <div className="panel" data-color="indigo">
+    <About />
+      <div className="cube"></div>
+      <div className="cube"></div>
+      <div className="cube"></div>
+      <div className="cube"></div>
+      <div className="cube"></div>
+      <div className="cube"></div>
+      <div className="cube"></div>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
     </div>
+    <div className="panel" data-color="blue">
+    <Employment />
+    <div className="circle"></div>
+    <div className="circle"></div>
+    <div className="circle"></div>
+    <div className="circle"></div>
+    <div className="circle"></div>
+    <div className="circle"></div>
+    <div className="circle"></div>
+
+    </div>
+    <div className="panel" data-color="orange">
+    <Education />
+    <div className="cross">x</div>
+    <div className="cross">x</div>
+    <div className="cross">x</div>
+    <div className="cross">x</div>
+    <div className="cross">x</div>
+    <div className="cross">x</div>
+    <div className="cross">x</div>
+    </div>
+    </div>
+    <Footer />
+
+    </>
   )
 }
