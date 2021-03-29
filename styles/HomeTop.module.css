@@ -42,3 +42,8 @@
         
     }
 }
+@media (min-width: 1100px) {
+  .picDiv {
+    height: 90vh;
+  }
+}

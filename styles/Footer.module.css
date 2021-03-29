@@ -19,3 +19,20 @@
 .recolor:hover {
     text-decoration: none;
 }
+.lineBreak {
+    display: none;
+}
+@media (max-width: 565px) {
+    .lineBreak {
+        display: block;
+    }
+    .footer {
+        height: 150px
+    }
+    .addPad {
+        line-height: 2;
+    }
+    .credit {
+        padding-bottom: 5px;
+    }
+}
