@@ -22,12 +22,12 @@ function Employment(){
                 <p>Web Design and Developemt starting from the ground up.  Using React.JS and Next.JS 
                     as the main resource and building blocks.  Customising sites to customer specs as well
                     industry best pactrices regarding SEO and mobile repsoniveness.</p>
-                <h3>PPI Quality Controller | Covea Insurance.  December 2016-September 2020</h3>
+                <h3>PPI Quality Controller | December 2016-September 2020</h3>
                 <p>Responsible for feedback and coaching on a one to one basis, identifying and highlighting any issues.
                 Maintaining all quality records for team members on a daily basis.  
                 Supporting and assisting with the departmental recruitment process 
                 </p>
-                <h3>PPI Premiums Administrator | Covea Insurance.  February 2015 – December 2016:</h3>
+                <h3>PPI Premiums Administrator | February 2015 – December 2016:</h3>
                     <p>Working with accuracy and speed as to meet set SLAs to avoid financial penalties for the company. 
                         Meeting strict GDPR rules to avoid the loss of sensitive data.
                         </p> 
