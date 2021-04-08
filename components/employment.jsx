@@ -18,10 +18,10 @@ function Employment(){
        <Col className={styles.addShadow} lg={6} md={12}>     
             <div>
                 <h2 className={styles.title}>Employment History</h2>
-                <h3>Web Designer | Houghton Web Design.  Feb 2021-Present</h3>
+                <h3>Web Designer | Houghton Web Design.  Dec 2020-Present</h3>
                 <p>Web Design and Developemt starting from the ground up.  Using React.JS and Next.JS 
-                    as the main resource and building blocks.  Customising sites to customer specs as well
-                    industry best pactrices regarding SEO and mobile repsoniveness.</p>
+                    as the main resource and building blocks.  What makes me different is every website is unique,
+                    React allows me to customise the site exactly how the customer wants it, no cookie cutter templates.</p>
                 <h3>PPI Quality Controller | December 2016-September 2020</h3>
                 <p>Responsible for feedback and coaching on a one to one basis, identifying and highlighting any issues.
                 Maintaining all quality records for team members on a daily basis.  

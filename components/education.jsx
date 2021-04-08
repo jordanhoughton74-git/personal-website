@@ -18,8 +18,8 @@ function Education(){
                     <div>
                         <h2 className={styles.title}>Education</h2>
                         <h3>Bsc Hons Business Studies 2.1 | Canterbury Christ Church University. </h3>
-                                <p>Graduating with with a 2.1 learning the functions of a business.  How and why they operate like they do.
-                                    How important digital marketing is, with the future being computer based.
+                                <p>A Business Studies degree with an emphasis on e-business and digitial marketing.  My long term passion
+                                    for using the internet as a means to generate customer led success stemmed from my learnings.  
                                 </p>
                                 <h3>Level 3 BTEC Business Studies | Distinction</h3>
                                 <p></p>
