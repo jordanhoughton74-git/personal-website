@@ -4,7 +4,9 @@ html, body {
   font-family: 'Montserrat Alternates', sans-serif !important;
   margin: 0;
   overflow-x: hidden;
+  max-width: 100%;
 }
+
 html { 
   scroll-behavior: smooth; 
 }
@@ -228,4 +230,7 @@ a, u {
   body{
     text-align: center;
   }
+}
+img {
+  max-width: 100%;
 }

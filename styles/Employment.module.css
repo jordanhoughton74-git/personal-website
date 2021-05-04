@@ -1,6 +1,5 @@
 .workImg {
-    width: 100%;
-    max-width: 560px;
+    max-width: 100%;
 }
 .imgDiv{
     display:block;
@@ -41,9 +40,7 @@
     .imgDiv{
         padding-bottom: 10%;
     }
-    .workImg {
-        max-width: 440px;
-    }
+   
 }
 @media (min-width: 990px) {
     .div, .div2 {
