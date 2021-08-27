@@ -1,34 +1,13 @@
-import React, { useState, useEffect } from "react";
-import styles from '../styles/Header.module.css'
+import Link from 'next/link';
 
-
-
-function HomeTop(){
-    const [scroll, setScroll] = useState(false);
-   useEffect(() => {
-     window.addEventListener("scroll", () => {
-       setScroll(window.scrollY > 650);
-     });
-   }, []);
-
-   
-
-
-    
+export default function Header(){
     return (
-        <div className={styles.header}>
-           
-            <ul>
-                <li><a className={scroll ? "about2" : "about"} href="#about">About </a> </li>
-                <li><a className={scroll ? "employment2" : "employment"} href="#employment">Employment </a></li>
-                <li><a className={scroll ? "education2" : "education"} href="#education">Education</a> </li>
-            </ul>
-
-
-            
-        
-        </div>
-    );
+    <>
+    <nav className="text-center sticky top-0 z-20 mt-5 grid-cols-3 space-x-6 font-semibold italic">
+        <Link href="#about"><a className="hover:text-indigo-700">About</a></Link>
+        <Link href="#employment"><a className="hover:text-yellow-700">Employment</a></Link>
+        <Link href="#education"><a className="hover:text-green-700">Education</a></Link>
+    </nav>
+    </>
+    )
 }
-
-export default HomeTop;
