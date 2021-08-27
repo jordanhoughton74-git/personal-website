@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Marquee from '../components/Marquee'
-
+import Image from 'next/image'
 
 export default function Home() {
 
@@ -24,17 +24,16 @@ export default function Home() {
       <meta property="og:type" content="website"></meta>
     </Head>
     <div className="wrapper">
-      <div className="relative grid grid-cols-1 md:grid-cols-2 space-x-4 py-32">
+      <div className="relative grid grid-cols-1 md:grid-cols-2 space-x-4 py-10 md:py-32">
         <div className="relative md:pl-32 my-auto justify-center align-center">
           <div className="my-auto z-10 relative text-center md:text-left px-4 md:px-0">
           <h1 className="text-5xl">Hi, I'm Jordan Houghton</h1>
           <h2 className="text-md pt-4">Web Designer & Developer with a passion for Website Speed and User Experience</h2>     
           </div>   
           <div className="hidden md:block 2xl:hidden -my-16 absolute inset-y-0 mt-50px right-1/2 w-full bg-blue-50 dark:bg-gray-800 shadow-sm rounded-r-3xl lg:right-72"></div>        </div>
-        <div className="z-10 relative">
+        <div className="z-10 relative text-center">
         <div className="absolute top-0 left-0 grid-grey w-40 h-40 ml-8 mt-12"></div>     
-
-          <img className="svg-img" alt="mobile phone" src="/images/web-design-media.svg" />
+          <Image className="svg-img" height="323" width="400" alt="mobile phone" src="/images/web-design-media.svg" />
         </div>
       </div>
       
@@ -67,8 +66,8 @@ export default function Home() {
                     Meeting strict GDPR rules to avoid the loss of sensitive data.
               </p> 
          </div>
-          <div className="m-auto">
-            <img className="svg-img" alt="work CV" src="/images/work-cv.svg" />
+          <div className="m-auto text-center">
+            <Image className="svg-img" width="398" height="360" alt="work CV" src="/images/work-cv.svg" />
           </div>
       </div>
       </div>
@@ -91,8 +90,8 @@ export default function Home() {
             <h6 className="text-xl py-2">BTEC Level 2 Certificate Engineering | Merit</h6>
             <h6 className="text-xl py-2">5 GCSE B Grades</h6>
          </div>
-          <div className="m-auto">
-            <img className="svg-img" alt="education" src="/images/education.svg" />
+          <div className="m-auto text-center">
+            <Image className="svg-img" width="398" height="300" alt="education" src="/images/education.svg" />
           </div>
       </div>
       </div>
