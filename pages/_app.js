@@ -1,5 +1,4 @@
 import Header from '../components/header'
-import Footer from '../components/Footer'
 import Head from 'next/head';
 
 import 'tailwindcss/tailwind.css'
@@ -17,7 +16,6 @@ function MyApp({ Component, pageProps }) {
   </Head>
   <Header />
   <Component {...pageProps} />
-  <Footer />
   </>
   )
 }
