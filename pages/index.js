@@ -52,17 +52,17 @@ export default function Home() {
     <div className="relative mx-auto px-4 py-10 bg-white dark:bg-gray-700 shadow-lg sm:rounded-3xl sm:p-10 lg:p-20">
       <div className="grid space-x-4 grid-cols-1 lg:grid-cols-2">
           <div>
-            <h4 className="text-2xl">Employment History</h4>
-            <h3 className="text-xl py-2">Web Designer | Houghton Web Design.  Dec 2020-Present</h3>
+            <h3 className="text-2xl">Employment History</h3>
+            <h4 className="text-xl py-2">Web Designer | Houghton Web Design.  Dec 2020-Present</h4>
                   <p>Web Design and Developemt starting from the ground up.  Using React.JS and Next.JS 
                     as the main resource and building blocks.  What makes me different is every website is unique,
                     React allows me to customise the site exactly how the customer wants it, no cookie cutter templates.</p>
-            <h3 className="text-xl py-2">PPI Quality Controller | December 2016-September 2020</h3>
+            <h4 className="text-xl py-2">PPI Quality Controller | December 2016-September 2020</h4>
                   <p>Responsible for feedback and coaching on a one to one basis, identifying and highlighting any issues.
                   Maintaining all quality records for team members on a daily basis.  
                   Supporting and assisting with the departmental recruitment process 
                   </p>
-            <h3 className="text-xl py-2">PPI Premiums Administrator | February 2015 – December 2016:</h3>
+            <h4 className="text-xl py-2">PPI Premiums Administrator | February 2015 – December 2016:</h4>
                   <p>Working with accuracy and speed as to meet set SLAs to avoid financial penalties for the company. 
                     Meeting strict GDPR rules to avoid the loss of sensitive data.
               </p> 
