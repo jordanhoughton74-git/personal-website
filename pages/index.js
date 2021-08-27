@@ -34,7 +34,7 @@ export default function Home() {
         <div className="z-10 relative">
         <div className="absolute top-0 left-0 grid-grey w-40 h-40 ml-8 mt-12"></div>     
 
-          <img className="h-full z-10 relative w-full max-w-sm mx-auto" alt="mobile phone" src="/images/web-design-media.svg" />
+          <img className="svg-img" alt="mobile phone" src="/images/web-design-media.svg" />
         </div>
       </div>
       
@@ -43,7 +43,7 @@ export default function Home() {
       <p className="text-lg">My name is Jordan Houghton. I am a Web Designer and Developer based in Kent, United Kingdom. 
           I have a strong passion for creating and designing the best User Interfaces and the most 
           incredible User Experience possible. I am now open to working on new freelance projects! 
-          <a className="text-indigo-500 hover:text-yellow-600 motion-safe:animate-pulse" href="mailto:jordanhoughton74@gmail.com"> Let's get started</a></p>
+          <a className="text-indigo-900 hover:text-yellow-600" href="mailto:jordanhoughton74@gmail.com"> Let's get started</a></p>
     </div>
 
   <div id="employment" className="sm:p-14">
@@ -68,7 +68,7 @@ export default function Home() {
               </p> 
          </div>
           <div className="m-auto">
-            <img className="max-w-md " alt="work CV" src="/images/work-cv.svg" />
+            <img className="svg-img" alt="work CV" src="/images/work-cv.svg" />
           </div>
       </div>
       </div>
@@ -92,7 +92,7 @@ export default function Home() {
             <h6 className="text-xl py-2">5 GCSE B Grades</h6>
          </div>
           <div className="m-auto">
-            <img className="max-w-md " alt="education" src="/images/education.svg" />
+            <img className="svg-img" alt="education" src="/images/education.svg" />
           </div>
       </div>
       </div>
