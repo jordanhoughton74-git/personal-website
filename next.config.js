@@ -14,7 +14,8 @@ module.exports =
                   styleSrc: ["'self'", "'unsafe-inline'", "https://fonts.googleapis.com"],
                   imgSrc: ["'self'", "data:"],
                   fontSrc: ["'self'", "https://fonts.gstatic.com"],
-                  scriptSrc: ["'self'", "'sha256-X+zrZv/IbzjZUnhsbWlsecLbwjndTpG0ZynXOif7V+k='"]
+                  connectSrc: ["'self'", "https://www.google-analytics.com"],
+                  scriptSrc: ["'self'", "'sha256-X+zrZv/IbzjZUnhsbWlsecLbwjndTpG0ZynXOif7V+k='", "https://www.googletagmanager.com", "'sha256-jPzOZpPUtOK2pQvtcWCQvDmmO+Q/77PPVy2NP/YhKao='", "https://www.google-analytics.com"]
                 },
               },
               frameGuard: "deny",
