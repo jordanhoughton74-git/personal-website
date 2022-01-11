@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Marquee from '../components/Marquee'
 import Image from 'next/image'
+import MapsSearch from '../components/MapsSearch'
 
 export default function Home() {
 
@@ -101,6 +102,7 @@ export default function Home() {
 <div className="py-20">
   <h6 className="text-center text-3xl pb-10">Portfolio</h6>
 <Marquee />
+<MapsSearch />
 </div>
 
     </>
